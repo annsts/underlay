@@ -2,7 +2,13 @@
 
 Custom UI for Lyria Realtime API. Web app or VST3 plugin.
 
-**♫ [Try it live](https://annsts.github.io/underlay/)**
+<p align="center">
+
+⋆·°:*⋆·°:* ✞★彡♡︎✦☾⛥✵ ✧☯︎♱ *:·°⋆*:·°⋆｡ ♡︎✧★彡✞☾♱✦ ☯︎⋆·°:*⋆·°:*  
+
+**[Try it live](https://annsts.github.io/underlay/)**  
+
+</p>
 
 ![Demo](misc/demo.gif)
 
