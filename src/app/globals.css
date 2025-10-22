@@ -1,0 +1,10 @@
+/* 1. Base Styles (Tailwind, resets, etc.) */
+@import '../styles/base.css';
+
+/* 2. Themes (variables + component overrides - self-contained) */
+@import '../styles/themes/glass.css'; /* Default/Light theme */
+@import '../styles/themes/dark.css'; /* Dark theme + Dark Cinematic variant */
+@import '../styles/themes/dark-cinematic.css'; /* Dark Cinematic metadata */
+
+/* 3. Base Component Styles (uses CSS variables from themes) */
+@import '../styles/glass-components.css';

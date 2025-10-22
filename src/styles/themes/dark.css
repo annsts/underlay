@@ -1,0 +1,289 @@
+.theme-dark,
+.theme-dark-cinematic {
+  --chrome-ash: #0a0a0a;
+  --chrome-gunmetal: #8b8d8e;
+  --chrome-steel: #505152;
+  --chrome-base: #c0c0c0;
+  --chrome-pearl: #f5f5f5;
+  --chrome-sheen: #e8e8e8;
+  --primary: var(--chrome-base);
+  --primary-hover: var(--chrome-pearl);
+  --secondary: var(--chrome-base);
+  --secondary-hover: var(--chrome-pearl);
+  --accent: var(--chrome-base);
+  --glass-bg: rgba(10, 10, 10, 0.3);
+  --glass-bg-hover: rgba(192, 192, 192, 0.15);
+  --glass-bg-inset: rgba(10, 10, 10, 0.1);
+  --glass-border: rgba(192, 192, 192, 0.3);
+  --glass-border-focus: rgba(192, 192, 192, 0.6);
+  --glass-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(192, 192, 192, 0.1),
+    0 0 20px rgba(192, 192, 192, 0.05);
+  --glass-shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.9), 0 0 50px rgba(232, 232, 232, 0.3);
+  --glass-blur: none;
+  --glass-blur-inset: none;
+  --text-primary: var(--chrome-pearl);
+  --text-secondary: var(--chrome-base);
+  --text-muted: var(--chrome-gunmetal);
+  --status-success-bg: var(--chrome-base);
+  --status-success-text: var(--chrome-pearl);
+  --status-warning-bg: var(--chrome-base);
+  --status-warning-text: var(--chrome-base);
+  --status-danger-bg: var(--chrome-gunmetal);
+  --status-danger-text: var(--chrome-base);
+  --status-inactive-bg: rgba(139, 141, 142, 0.3);
+  --status-inactive-text: var(--chrome-gunmetal);
+  --bg-gradient:
+    radial-gradient(circle at 25% 15%, rgba(192, 192, 192, 0.03), transparent 40%),
+    radial-gradient(circle at 75% 85%, rgba(139, 141, 142, 0.03), transparent 40%),
+    linear-gradient(180deg, #0a0a0a, #151515, #0a0a0a);
+
+  --button-bg: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(10, 10, 10, 0.5));
+  --button-bg-hover: linear-gradient(135deg, rgba(192, 192, 192, 0.25), rgba(10, 10, 10, 0.4));
+  --button-primary-bg: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.3),
+    rgba(139, 141, 142, 0.25),
+    rgba(10, 10, 10, 0.4)
+  );
+  --button-primary-bg-hover: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.35),
+    rgba(192, 192, 192, 0.3)
+  );
+
+  --input-bg: rgba(10, 10, 10, 0.6);
+  --focus-ring: rgba(192, 192, 192, 0.15);
+
+  --knob-bg: radial-gradient(
+    circle,
+    rgba(232, 232, 232, 0.3),
+    rgba(192, 192, 192, 0.25),
+    rgba(139, 141, 142, 0.2),
+    rgba(10, 10, 10, 0.4)
+  );
+  --knob-center-bg: linear-gradient(to bottom, var(--chrome-base), var(--chrome-gunmetal));
+  --knob-center-border: rgba(232, 232, 232, 0.8);
+  --knob-track-gradient: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.15),
+    rgba(139, 141, 142, 0.15)
+  );
+  --knob-indicator-bg: rgba(192, 192, 192, 0.15);
+  --knob-indicator-border: rgba(192, 192, 192, 0.3);
+  --knob-value-gradient: radial-gradient(
+    circle at 25% 50%,
+    rgba(192, 192, 192, 0.08),
+    transparent 60%
+  );
+
+  --button-shadow-primary: 0 4px 16px rgba(0, 0, 0, 0.6);
+  --button-shadow-primary-hover: 0 6px 20px rgba(0, 0, 0, 0.8);
+
+  --dialog-bg: rgba(10, 10, 10, 0.85);
+
+  --scroll-bg: rgba(10, 10, 10, 0.3);
+  --scrollbar-thumb: rgba(192, 192, 192, 0.3);
+
+  --dropdown-bg: rgba(10, 10, 10, 0.8);
+  --dropdown-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+  --dropdown-item-hover: rgba(192, 192, 192, 0.15);
+  --dropdown-item-selected: rgba(192, 192, 192, 0.2);
+
+  --sage-100: var(--chrome-pearl);
+  --sage-200: var(--chrome-base);
+  --sage-300: var(--chrome-base);
+  --sage-400: var(--chrome-gunmetal);
+  --pink-200: var(--chrome-base);
+  --pink-300: var(--chrome-base);
+  --pink-400: var(--chrome-base);
+}
+
+.theme-dark {
+  --enable-shader: 0;
+}
+
+.theme-dark-cinematic {
+  --enable-shader: 1;
+}
+
+.theme-dark .glass-panel {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.05), rgba(10, 10, 10, 0.15)) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid rgba(192, 192, 192, 0.2);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(192, 192, 192, 0.1),
+    0 0 20px rgba(192, 192, 192, 0.05);
+}
+
+.theme-dark .glass-panel-inset {
+  background: rgba(10, 10, 10, 0.1) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid rgba(192, 192, 192, 0.2);
+}
+
+.theme-dark .glass-button {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(10, 10, 10, 0.5));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(192, 192, 192, 0.35);
+  color: var(--chrome-pearl);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  text-shadow: none;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(192, 192, 192, 0.1);
+}
+
+.theme-dark .glass-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.25), rgba(10, 10, 10, 0.4));
+  border-color: rgba(192, 192, 192, 0.55);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(192, 192, 192, 0.2);
+}
+
+.theme-dark .glass-button-primary {
+  background: linear-gradient(
+    135deg,
+    rgba(192, 192, 192, 0.3),
+    rgba(139, 141, 142, 0.25),
+    rgba(10, 10, 10, 0.4)
+  );
+  border: 1px solid rgba(192, 192, 192, 0.6);
+  color: var(--chrome-pearl);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  text-shadow: none;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(192, 192, 192, 0.25),
+    inset 0 1px 0 rgba(192, 192, 192, 0.2);
+  position: relative;
+  transition: all 0.15s ease-out;
+}
+
+.theme-dark .glass-button-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 32px rgba(0, 0, 0, 0.9),
+    0 0 50px rgba(192, 192, 192, 0.3),
+    inset 0 1px 0 rgba(192, 192, 192, 0.25);
+}
+
+.theme-dark .glass-button-primary:active:not(:disabled) {
+  transform: translateY(0);
+  transition: all 0.05s ease-out;
+}
+
+.theme-dark .glass-input {
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(139, 141, 142, 0.4);
+  color: var(--chrome-pearl);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(192, 192, 192, 0.05);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  text-shadow: none;
+}
+
+.theme-dark .glass-input:focus {
+  border-color: rgba(192, 192, 192, 0.6);
+  box-shadow: 0 0 0 3px rgba(192, 192, 192, 0.15);
+}
+
+.theme-dark .glass-input::placeholder {
+  color: rgba(139, 141, 142, 0.5);
+}
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3 {
+  text-shadow:
+    1px 0 0 rgba(192, 192, 192, 0.3),
+    -1px 0 0 rgba(139, 141, 142, 0.3),
+    0 0 20px rgba(192, 192, 192, 0.2);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.theme-dark h2.text-sm {
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  text-shadow: none;
+}
+
+.theme-dark .text-xs.font-mono,
+.theme-dark .text-sm.font-mono,
+.theme-dark span.text-xs {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  text-shadow: none;
+}
+
+.glass-dropdown-menu.theme-dark {
+  background: rgba(10, 10, 10, 0.5) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(192, 192, 192, 0.25) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8) !important;
+}
+
+.glass-dropdown-menu.theme-dark .glass-dropdown-item {
+  color: var(--chrome-pearl);
+}
+
+.glass-dropdown-menu.theme-dark .glass-dropdown-item:hover,
+.glass-dropdown-menu.theme-dark .glass-dropdown-item:focus {
+  background: rgba(192, 192, 192, 0.15) !important;
+  color: var(--chrome-base) !important;
+}
+
+.glass-dropdown-menu.theme-dark .glass-dropdown-item:focus {
+  box-shadow: 0 0 0 1px rgba(192, 192, 192, 0.3) !important;
+  border: none !important;
+}
+
+.glass-dropdown-menu.theme-dark .glass-dropdown-item:active {
+  background: rgba(192, 192, 192, 0.2) !important;
+}
+
+.glass-dropdown-menu.theme-dark .glass-dropdown-item-selected {
+  background: rgba(192, 192, 192, 0.2) !important;
+  color: var(--chrome-base) !important;
+}
+
+.glass-dropdown-menu.theme-dark .glass-dropdown-item-selected::before {
+  background: var(--chrome-base) !important;
+}
+
+.theme-dark .glass-dialog {
+  background: rgba(10, 10, 10, 0.3) !important;
+  backdrop-filter: blur(60px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(60px) saturate(180%) !important;
+  border: 1px solid rgba(192, 192, 192, 0.2) !important;
+  box-shadow:
+    0 20px 80px rgba(0, 0, 0, 0.8),
+    0 0 100px rgba(192, 192, 192, 0.03),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+.theme-dark #knob-gradient stop:nth-child(1) {
+  stop-color: var(--chrome-base) !important;
+}
+
+.theme-dark #knob-gradient stop:nth-child(2) {
+  stop-color: var(--chrome-gunmetal) !important;
+}
+

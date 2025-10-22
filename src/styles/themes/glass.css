@@ -1,0 +1,90 @@
+:root,
+.theme-glass {
+  --primary: #ec4899;
+  --primary-hover: #f472b6;
+  --secondary: #92b88c;
+  --secondary-hover: #b8d0b4;
+  --accent: #d8e4d6;
+  --glass-bg: rgba(0, 0, 0, 0.4);
+  --glass-bg-hover: rgba(0, 0, 0, 0.75);
+  --glass-bg-inset: rgba(0, 0, 0, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-border-focus: rgba(236, 72, 153, 0.4);
+  --glass-shadow: rgba(0, 0, 0, 0.3);
+  --glass-shadow-hover: rgba(0, 0, 0, 0.4);
+  --glass-blur: blur(40px);
+  --glass-blur-inset: blur(20px);
+  --text-primary: #f7f9f7;
+  --text-secondary: #d8e4d6;
+  --text-muted: #b8d0b4;
+  --status-success-bg: #4ade80;
+  --status-success-text: #86efac;
+  --status-warning-bg: #fbbf24;
+  --status-warning-text: #fde047;
+  --status-danger-bg: #f87171;
+  --status-danger-text: #fca5a5;
+  --status-inactive-bg: rgba(156, 163, 175, 0.5);
+  --status-inactive-text: #9ca3af;
+  --bg-gradient:
+    radial-gradient(circle at 20% 10%, rgba(236, 72, 153, 0.15), transparent 50%),
+    radial-gradient(circle at 80% 90%, rgba(146, 184, 140, 0.15), transparent 50%),
+    linear-gradient(180deg, #1a1625, #0f0a1a);
+
+  --button-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+  --button-bg-hover: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
+  --button-primary-bg: linear-gradient(135deg, var(--primary), #f472b6);
+  --button-primary-bg-hover: linear-gradient(135deg, var(--primary), var(--primary));
+
+  --input-bg: rgba(0, 0, 0, 0.3);
+  --focus-ring: rgba(236, 72, 153, 0.2);
+
+  --knob-bg: rgba(255, 255, 255, 0.1);
+  --knob-center-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  --knob-center-border: rgba(255, 255, 255, 0.3);
+  --knob-track-gradient: linear-gradient(
+    135deg,
+    rgba(146, 184, 140, 0.15),
+    rgba(236, 72, 153, 0.15)
+  );
+  --knob-indicator-bg: rgba(236, 72, 153, 0.15);
+  --knob-indicator-border: rgba(236, 72, 153, 0.3);
+  --knob-value-gradient: radial-gradient(
+    circle at 25% 50%,
+    rgba(236, 72, 153, 0.08),
+    transparent 60%
+  );
+
+  --button-shadow-primary: 0 4px 16px rgba(236, 72, 153, 0.25);
+  --button-shadow-primary-hover: 0 6px 20px rgba(236, 72, 153, 0.35);
+
+  --dialog-bg: rgba(0, 0, 0, 0.9);
+
+  --scroll-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.2);
+
+  --dropdown-bg: rgba(0, 0, 0, 0.85);
+  --dropdown-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  --dropdown-item-hover: rgba(236, 72, 153, 0.1);
+  --dropdown-item-selected: rgba(236, 72, 153, 0.15);
+
+  --sage-100: #eef2ed;
+  --sage-200: #d8e4d6;
+  --sage-300: #b8d0b4;
+  --sage-400: #92b88c;
+  --pink-200: #fbcfe8;
+  --pink-300: #f9a8d4;
+  --pink-400: #f472b6;
+
+  --enable-shader: 0;
+}
+
+.theme-glass .glass-dialog {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(60px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(60px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow:
+    0 20px 80px rgba(0, 0, 0, 0.6),
+    0 0 100px rgba(236, 72, 153, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}

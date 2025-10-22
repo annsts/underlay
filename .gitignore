@@ -1,0 +1,90 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# VST plugin build artifacts
+/vst/build/
+/vst/vst3sdk/
+/vst/dist/*
+!/vst/dist/*.pkg
+
+# CMake files
+**/CMakeCache.txt
+**/CMakeFiles/
+**/cmake_install.cmake
+**/Makefile
+**/*.cmake
+!**/CMakeLists.txt
+
+# VST3 builds
+**/*.vst3
+*.vst3
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Build outputs
+*.o
+*.a
+*.so
+*.dylib
+
+# Next.js build outputs
+/out/
+/.next/
+
+# Test and development files
+index.html
+performance-analyzer.js
+performance-report.json
+*.backup
+*.old
+
+# Release archives
+/release/
+
+# Allow VST installer packages
+!**/*.pkg
+
+# Test files
+test-build.js
