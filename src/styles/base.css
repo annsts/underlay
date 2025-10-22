@@ -89,6 +89,13 @@
   html {
     color-scheme: light dark;
     overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  html::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
   }
 
   body {
@@ -101,6 +108,7 @@
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    overflow: hidden;
   }
 
   input,
